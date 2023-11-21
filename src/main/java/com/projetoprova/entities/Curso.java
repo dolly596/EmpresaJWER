@@ -14,18 +14,25 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Pedido")
-public class Produto {
+@Table(name = "Cursos")
+public class Curso {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@NotNull
-	private String descricao;
+
+	private String nome;
 	
-	@NotNull
-	private String tipo;
+
+	private double cargaHoraria;
 	
-	@NotNull
-	private double preco;
+
+	private String conteudo;
+	
+
+	private double valor;
+	
+
+	private String professor;
 }
